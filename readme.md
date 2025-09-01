@@ -5,3 +5,5 @@
 
 ## to remove the file use this
     make clean_file
+
+the result will be in the output.txt file

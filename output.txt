@@ -1,0 +1,5 @@
+array before sorting: 
+181, 123, 57, 258, 85, 121, 292, 57, 66, 41, 61
+array after sorting: 
+41, 57, 57, 61, 66, 85, 121, 123, 181, 258, 292
+Elapsed time: 58485 nanoseconds 
