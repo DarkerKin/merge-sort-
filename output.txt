@@ -1,5 +1,1 @@
-array before sorting: 
-181, 123, 57, 258, 85, 121, 292, 57, 66, 41, 61
-array after sorting: 
-41, 57, 57, 61, 66, 85, 121, 123, 181, 258, 292
-Elapsed time: 58485 nanoseconds 
+{ array before sorting: "[104, 293, 7, 295, 197, 4, 125, 296, 133, 181, 237]"", array after sorting: "[4, 7, 104, 125, 133, 181, 197, 237, 293, 295, 296]",Elapsed time: 18292 } 

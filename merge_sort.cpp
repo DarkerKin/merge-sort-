@@ -62,8 +62,9 @@ void mergeSort(int arr[], int starting_index, int ending_index){
 }
 
 void printArray(int arr[], int size){
+	cout<<"[";
 	for(int i = 0; i < size -1; i++)cout <<arr[i] << ", ";
-	cout<< arr[size-1]<< endl;
+	cout<< arr[size-1]<< "]\"" ;
 }
 
 void generateRandomArray(int arr[],int size){
@@ -89,12 +90,8 @@ int main(int argc,char *argv[]){
 	int arr[array_size];
 
 	generateRandomArray(arr,array_size);
-	cout << "array before sorting: "<<endl;
-	printArray(arr,array_size);
 
 	mergeSort(arr,0,array_size-1);
-	cout << "array after sorting: "<<endl;
-	printArray(arr,array_size);
 
 	// End time
     auto end = chrono::high_resolution_clock::now();
@@ -102,7 +99,7 @@ int main(int argc,char *argv[]){
     // Calculate duration in milliseconds
     auto duration = chrono::duration_cast<chrono::nanoseconds>(end - start);
 
-    cout << "Elapsed time: " << duration.count() << " nanoseconds " << endl;
+    cout<<"{\"size\": "<<array_size << ",\"Elapsed time\": " << duration.count() << " } " << endl;
 
 	return 0;
 }
