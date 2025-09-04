@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
+print("hello")
 subprocess.run(["make"])
 time_taken_in_respect_to_array_size = {"size":[],"time elapsed":[]}
 
