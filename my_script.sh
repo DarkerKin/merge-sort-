@@ -4,6 +4,7 @@
 #SBATCH --time=168:00:00
 #SBATCH --output=slurm-%j.out
 #SBATCH --error=slurm-%j.err
+#SBATCH --mem=16G
 
 echo "starting process"
 
@@ -15,7 +16,7 @@ pwd
 make
 
 # run the compiled code (adjust range so it fits runtime & memory!)
-./merge_sort 10 10000000 10000   # safer upper bound than 1e9
+./merge_sort 10 1000000000 10000   # safer upper bound than 1e9
 
 # load Anaconda first
 module load anaconda3/2023.09
