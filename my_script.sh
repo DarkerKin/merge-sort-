@@ -13,8 +13,14 @@ pwd
 # load python module if needed
 module load python
 
+#build a virtual environment
+python3 -m venv virtual-environment
+
 #use the virtual environment
 source virtual-environment/bin/activate
+
+#install all packages 
+pip install -r requirements.txt
 
 #run the program
 python3 benchmark.py
