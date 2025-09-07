@@ -16,4 +16,4 @@ for i in range(10,10**9):
 
 df = pd.DataFrame(data=time_taken_in_respect_to_array_size)
 df.plot(kind="line",y="time elapsed",x="size",xlabel='size of the array',ylabel='time taken to sort the array (nanoseconds)')
-plt.savefig('benchmark.png')
+plt.savefig('benchmark_this_is_it.png')
