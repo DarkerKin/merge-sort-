@@ -1,19 +1,30 @@
-import subprocess
-import json
 import pandas as pd
 import matplotlib.pyplot as plt
+import json
 
+# Read results from file
+results = []
+with open("results.jsonl", "r") as f:
+    for line in f:
+        try:
+            results.append(json.loads(line))
+        except json.JSONDecodeError:
+            continue  # skip bad lines if any
 
+# Convert to DataFrame
+df = pd.DataFrame(results)
 
-subprocess.run(["make"])
-time_taken_in_respect_to_array_size = {"size":[],"time elapsed":[]}
+# Plot
+ax = df.plot(
+    kind="line",
+    x="size",
+    y="Elapsed time",
+    xlabel="Size of the array",
+    ylabel="Time taken to sort the array (nanoseconds)",
+    title="Merge Sort Benchmark",
+    legend=False
+)
 
-
-for i in range(10,10**9):
-    result = subprocess.run(["./merge_sort",str(i)], capture_output=True, text=True)
-    time_taken_in_respect_to_array_size["size" ].append(json.loads(result.stdout)["size"])
-    time_taken_in_respect_to_array_size["time elapsed"].append(json.loads(result.stdout)["Elapsed time"])
-
-df = pd.DataFrame(data=time_taken_in_respect_to_array_size)
-df.plot(kind="line",y="time elapsed",x="size",xlabel='size of the array',ylabel='time taken to sort the array (nanoseconds)')
-plt.savefig('benchmark_this_is_it.png')
+plt.tight_layout()
+plt.savefig("benchmark_plot.png")
+plt.show()

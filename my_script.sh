@@ -9,7 +9,15 @@ echo "starting process"
 
 # move to your project directory
 cd /users/vjoshi9/itcs-4145/merge-sort- || exit 1
+
+#debugging path
 pwd
+
+#compile code
+make
+
+#run the compiled code
+./merge_sort 10 1000000000 10000
 
 # load Anaconda
 module load anaconda3/2023.09
@@ -30,4 +38,4 @@ fi
 echo "Running benchmark.py..."
 python benchmark.py
 
-echo "done"
+echo "done benchmarking"
