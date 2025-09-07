@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=myjob
 #SBATCH --partition=Centaurus
-#SBATCH --time=00:30:00
+#SBATCH --time=168:00:00
 #SBATCH --output=slurm-%j.out   # save job output
 #SBATCH --error=slurm-%j.err    # save job errors
 
