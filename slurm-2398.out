@@ -1,8 +1,0 @@
-Defaulting to user installation because normal site-packages is not writeable
-ERROR: Could not find a version that satisfies the requirement requirements.txt (from versions: none)
-HINT: You are attempting to install a package literally named "requirements.txt" (which cannot exist). Consider using the '-r' flag to install the packages listed in requirements.txt
-ERROR: No matching distribution found for requirements.txt
-Traceback (most recent call last):
-  File "/users/vjoshi9/itcs-4145/merge-sort-/benchmark.py", line 3, in <module>
-    import pandas as pd
-ModuleNotFoundError: No module named 'pandas'
