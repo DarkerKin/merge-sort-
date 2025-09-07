@@ -13,6 +13,9 @@ pwd
 # load python module if needed
 module load python
 
+#use the virtual environment
+source virtual-environment/bin/activate
+
 #run the program
 python3 benchmark.py
 
