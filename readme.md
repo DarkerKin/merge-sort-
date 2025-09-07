@@ -2,16 +2,10 @@
 
 ## to run the file use this
 
-    pip install requirements.txt
-    python3 benchmark.py
+    sbatch my_script.sh
 
 # Benchmarking 
 
-see the benchmark.png
-
-## to remove the file use this
-
-    make clean_file
-    
-
-the result will be in the output.txt file
+see the benchmark_post.png
+<br>
+<img src="https://raw.githubusercontent.com/DarkerKin/merge-sort-/refs/heads/main/benchmark_plot.png">
