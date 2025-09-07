@@ -1,2 +1,4 @@
 merge_sort
 /virtual-environment
+slurm-*.out
+/myenv
