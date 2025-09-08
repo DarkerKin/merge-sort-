@@ -18,8 +18,8 @@ pwd
 # compile C++ code
 make
 
-# run the compiled code (adjust range so it fits runtime & memory!)
-./merge_sort 10 1000000000 10000   # safer upper bound than 1e9
+# run the compiled code 
+./merge_sort 10 100000 10000   
 
 # load Anaconda first
 module load anaconda3/2023.09
@@ -28,7 +28,7 @@ module load anaconda3/2023.09
 if ! conda env list | grep -q "myenv"; then
     echo "Creating conda environment..."
     conda create -y -n myenv python=3.12
-    source activate myenv   # safer inside SLURM than "conda activate"
+    source activate myenv   
     pip install --upgrade pip
     pip install -r requirements.txt
 else
