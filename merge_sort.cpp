@@ -86,7 +86,7 @@ int main(int argc, char *argv[]) {
         int end_size = atoi(argv[2]);
         int step = atoi(argv[3]);
 
-        for (int array_size = end_size; array_size >= start_size; array_size -= step) {
+        for (int array_size = start_size; array_size <= end_size; array_size += step) {
             vector<int> arr(array_size);
 
             generateRandomArray(arr.data(), array_size);
