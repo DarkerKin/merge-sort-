@@ -1,4 +1,5 @@
 merge_sort
 /virtual-environment
 slurm-*.out
+slurm-*.err
 /myenv
