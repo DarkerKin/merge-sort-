@@ -19,7 +19,7 @@ pwd
 make
 
 # run the compiled code 
-./merge_sort 10 100000 10000   
+./merge_sort 10 10000000 10000   
 
 # load Anaconda first
 module load anaconda3/2023.09
