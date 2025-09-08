@@ -9,7 +9,7 @@
 echo "starting process"
 
 #clear response.jsonl
-> response.jsonl
+> results.jsonl
 
 # move to your project directory
 cd /users/vjoshi9/itcs-4145/merge-sort- || exit 1
