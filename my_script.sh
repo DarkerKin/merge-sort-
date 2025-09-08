@@ -8,8 +8,8 @@
 
 echo "starting process"
 
-#remove the response.jsonl
-rm response.jsonl
+#clear response.jsonl
+> response.jsonl
 
 # move to your project directory
 cd /users/vjoshi9/itcs-4145/merge-sort- || exit 1
